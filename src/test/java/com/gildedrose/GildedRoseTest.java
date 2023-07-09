@@ -11,7 +11,7 @@ class GildedRoseTest {
         Item[] items = new Item[]{};
         GildedRose gildedRose = new GildedRose(items);
 
-        gildedRose.updateQuality();
+        gildedRose.updateQualityItems();
 
         assertEquals(0,items.length);
     }
@@ -20,7 +20,7 @@ class GildedRoseTest {
     void foo() {
         Item[] items = new Item[] { new Item("foo", 0, 0) };
         GildedRose app = new GildedRose(items);
-        app.updateQuality();
+        app.updateQualityItems();
         assertEquals("foo", app.items[0].name);
     }
 

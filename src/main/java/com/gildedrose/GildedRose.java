@@ -10,7 +10,7 @@ class GildedRose {
         this.items = items;
     }
 
-    public void updateQuality() {
+    public void updateQualityItems() {
         for (int i = 0; i < items.length; i++) {
             Item item = items[i];
             if (item.name.equals(AGED_BRIE)) {
@@ -44,6 +44,8 @@ class GildedRose {
                 }
             }
 
+            //add my comment
+            //hello
             if (item.name.equals(SULFRURAS)) {
             } else {
                 item.sellIn = item.sellIn - 1;
